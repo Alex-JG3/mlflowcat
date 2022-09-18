@@ -17,8 +17,15 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/Alex-JG3/mlflowcat"
-"Bug Tracker" = "https://github.com/Alex-JG3/mlflowcat/issues"
+    "Homepage" = "https://github.com/Alex-JG3/mlflowcat"
+    "Bug Tracker" = "https://github.com/Alex-JG3/mlflowcat/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+]
 
