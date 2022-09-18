@@ -29,5 +29,6 @@ dev = [
     "flake8",
     "mlflow",
     "sklearn",
+    "black",
 ]
 
