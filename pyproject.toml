@@ -31,4 +31,9 @@ dev = [
     "sklearn",
     "black",
 ]
+test = [
+    "pytest",
+    "flake8",
+    "black",
+]
 
