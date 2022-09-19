@@ -30,10 +30,10 @@ dev = [
     "mlflow",
     "sklearn",
     "black",
+    "pre-commit",
 ]
 test = [
     "pytest",
     "flake8",
     "black",
 ]
-
