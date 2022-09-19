@@ -1,13 +1,16 @@
-name: Test
+name: Actions
 on: [push]
 jobs:
-  lint-actions:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    - run: python -m pip install -e ".[dev]"
+    - run: python -m pip install -e ".[test]"
     - run: pytest tests
+    - run: python -m black --check .
+    - run: flake8 tests
+    - run: flake8 mlflowcat
 
