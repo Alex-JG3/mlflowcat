@@ -13,4 +13,3 @@ jobs:
     - run: python -m black --check .
     - run: flake8 tests
     - run: flake8 mlflowcat
-
